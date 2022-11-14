@@ -48,9 +48,17 @@ createApp({
         }else{
             this.currentIndex--;
         }
+    },
+    onMouseEnter(){
+        clearInterval(autoPlay);
+    },
+    onMouseExit(){
+        autoplay = setInterval(this.onClickNext, 3000);
     }
   },
   mounted() {
-    let autoPlay = setInterval(this.onClickNext, 3000);
+    autoPlay = setInterval(this.onClickNext, 3000);
   }
 }).mount('#app');
+
+let autoplay;
