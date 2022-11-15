@@ -49,8 +49,8 @@ createApp({
             this.currentIndex--;
         }
     },
-    onThumbClicked(){
-        
+    onThumbClicked(i){
+        this.currentIndex = i;
     },
     onMouseEnter(){
         clearInterval(autoPlay);
