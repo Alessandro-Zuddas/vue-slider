@@ -49,6 +49,9 @@ createApp({
             this.currentIndex--;
         }
     },
+    onThumbClicked(){
+        
+    },
     onMouseEnter(){
         clearInterval(autoPlay);
     },
